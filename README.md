@@ -18,6 +18,7 @@ A personal portfolio project created by and for Jordan Snow! Created using Next.
 
 #### Landing Page
 
-- [ ] Get menu buttons working on AppBar
+- [x] Get menu buttons working on AppBar
+- [ ] Write some content
 
 ## Stretch Goals

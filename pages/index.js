@@ -4,6 +4,7 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import MuiLink from '@material-ui/core/Link';
+import Grid from '@material-ui/core/Grid'
 import Link from '../src/Link';
 import Landing from '../src/Landing'
 import ProminentAppBar from '../src/ProminentAppBar'
@@ -11,7 +12,11 @@ import { ThemeProvider } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    margin: theme.spacing(0)
+  },
+  container: {
     height: '100vh',
+    margin: theme.spacing(0),
   }
 }))
 
@@ -31,20 +36,19 @@ function Copyright() {
 export default function Index() {
   const classes = useStyles()
   return (
-    <>
+    <div className={classes.root}>
       <ProminentAppBar />
-      <Container className={classes.root} maxWidth="sm">
-        <Box my={4}>
-          {/* <Typography variant="h4" component="h1" gutterBottom>
-            Welcome to CodeSnow!
-          </Typography> */}
-          {/* <Link href="/about" color="secondary">
-            Go to the about page
-          </Link> */}
-          <Landing />
-          <Copyright />
-        </Box>
+      <Container className={classes.container}>
+        <Grid container spacing={3}> 
+          <Grid item xs={12} sm={6}>
+            <Landing />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Landing />
+          </Grid>
+        </Grid>
+        <Copyright />
       </Container>
-    </>
+    </div>
   );
 }
