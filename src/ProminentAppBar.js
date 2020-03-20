@@ -36,6 +36,7 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 1,
     alignSelf: 'flex-end',
+    cursor: 'pointer'
   },
   list: {
     width: 250,
@@ -51,6 +52,10 @@ export default function ProminentAppBar() {
     left: false,
   });
 
+  const handleClick = (e) => {
+    window.location = '/'
+  }
+
   const toggleDrawer = (side, open) => event => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
@@ -62,33 +67,6 @@ export default function ProminentAppBar() {
   const sideList = side => (
     <div
       className={classes.list}
-      role="presentation"
-      onClick={toggleDrawer(side, false)}
-      onKeyDown={toggleDrawer(side, false)}
-    >
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-    </div>
-  );
-
-  const fullList = side => (
-    <div
-      className={classes.fullList}
       role="presentation"
       onClick={toggleDrawer(side, false)}
       onKeyDown={toggleDrawer(side, false)}
@@ -126,7 +104,12 @@ export default function ProminentAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography className={classes.title} variant="h5" noWrap>
+          <Typography
+          className={classes.title}
+          variant="h5"
+          noWrap
+          onClick={handleClick}
+          >
             CodeSnow!
           </Typography>
           <IconButton aria-label="display more actions" edge="end" color="inherit">

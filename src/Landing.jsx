@@ -1,18 +1,21 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Paper, Box } from '@material-ui/core'
+import BusSolParagraphs from './textAssets/BusSolParagraphs'
 
 const useStyles = makeStyles(theme => ({
   root: {
     margin: theme.spacing(2, 0),
-    height: '50vh',
+    height: 'auto',
     padding: theme.spacing(2, 2, 2, 2),
   },
   header: {
-    textAlign: 'center'
+    textAlign: 'center',
+    color: theme.palette.secondary.dark
   },
   body: {
-    margin: theme.spacing(20, 2, 0, 2)
+    margin: theme.spacing(20, 2, 0, 2),
+    
   }
 }))
 
@@ -26,14 +29,14 @@ export default function Landing() {
         color="primary"
         component="h1"
         variant="h5">
-          Welcome to my Landing Page!
+          Business Solutions Through Web Development
       </Typography>
       <Typography
         className={classes.body}
         color='textPrimary'
         component='p'  
       >
-        My name's Jordan! Come on in, stay awhile...let me show you what I can do for you!
+        <BusSolParagraphs />
       </Typography>
     </Paper>
   )

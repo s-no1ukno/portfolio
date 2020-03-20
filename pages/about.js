@@ -1,18 +1,31 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import MuiLink from '@material-ui/core/Link';
-import Button from '@material-ui/core/Button';
-import ProTip from '../src/ProTip';
+import Grid from '@material-ui/core/Grid'
 import Link from '../src/Link';
+import Landing from '../src/Landing'
+import ProminentAppBar from '../src/ProminentAppBar'
+import { ThemeProvider } from '@material-ui/core';
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    margin: theme.spacing(0)
+  },
+  container: {
+    height: '100vh',
+    margin: theme.spacing(0),
+  }
+}))
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <MuiLink color="inherit" href="https://material-ui.com/">
-        Your Website
+        Jordan Snow
       </MuiLink>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -20,19 +33,22 @@ function Copyright() {
   );
 }
 
-export default function About() {
+export default function Index() {
+  const classes = useStyles()
   return (
-    <Container maxWidth="sm">
-      <Box my={4}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Next.js example
-        </Typography>
-        <Button variant="contained" color="primary" component={Link} naked href="/">
-          Go to the main page
-        </Button>
-        <ProTip />
+    <div className={classes.root}>
+      <ProminentAppBar />
+      <Container className={classes.container}>
+        <Grid container spacing={3}> 
+          <Grid item xs={12} sm={6}>
+            <Landing />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            {/* <Landing /> */}
+          </Grid>
+        </Grid>
         <Copyright />
-      </Box>
-    </Container>
+      </Container>
+    </div>
   );
 }

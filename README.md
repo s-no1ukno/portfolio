@@ -7,8 +7,8 @@ A personal portfolio project created by and for Jordan Snow! Created using Next.
 ### FrontEnd
 
 - [ ] Outline a site layout
-  - [ ] Landing Page Layout
-  - [ ] About Page Layout
+  - [x] Landing Page Layout
+  - [x] About Page Layout
   - [ ] Sitemap
     - [ ] Blog?
       - [ ] API endpoints
@@ -19,6 +19,10 @@ A personal portfolio project created by and for Jordan Snow! Created using Next.
 #### Landing Page
 
 - [x] Get menu buttons working on AppBar
+
+#### About Page
+
+- [ ] Make the side bar hover keys highlight the secondary color
 - [ ] Write some content
 
 ## Stretch Goals
