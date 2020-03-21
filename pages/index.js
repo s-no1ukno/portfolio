@@ -7,8 +7,8 @@ import MuiLink from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
 import Link from 'next/link';
-import Landing from '../src/Landing'
-import ProminentAppBar from '../src/ProminentAppBar'
+import Landing from '../src/Components/Landing'
+import ProminentAppBar from '../src/Components/ProminentAppBar'
 import { ThemeProvider } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
   header: {
     textAlign: 'center',
     background: theme.palette.secondary.light,
-    color: theme.palette.primary.dark,
+    color: theme.palette.primary.main,
     borderTopLeftRadius: 25,
     borderTopRightRadius: 25,
     fontWeight: 'bold',

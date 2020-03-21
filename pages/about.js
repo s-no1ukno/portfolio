@@ -5,9 +5,9 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import MuiLink from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid'
-import Link from '../src/Link';
-import Landing from '../src/Landing'
-import ProminentAppBar from '../src/ProminentAppBar'
+import Link from '../src/Components/Link';
+import Landing from '../src/Components/Landing'
+import ProminentAppBar from '../src/Components/ProminentAppBar'
 import { ThemeProvider } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
@@ -33,7 +33,7 @@ function Copyright() {
   );
 }
 
-export default function Index() {
+export default function About() {
   const classes = useStyles()
   return (
     <div className={classes.root}>

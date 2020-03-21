@@ -11,14 +11,15 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 
 //Drawer imports
 import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import ViewDayOutlinedIcon from '@material-ui/icons/ViewDayOutlined';
+import DraftsOutlinedIcon from '@material-ui/icons/DraftsOutlined';
+import PermIdentityOutlinedIcon from '@material-ui/icons/PermIdentityOutlined';
+import RecentActorsOutlinedIcon from '@material-ui/icons/RecentActorsOutlined';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -44,6 +45,15 @@ const useStyles = makeStyles(theme => ({
   fullList: {
     width: 'auto',
   },
+  drawerHeader: {
+    textAlign: 'center'
+  },
+  item: {
+    '&:hover': {
+      background: theme.palette.secondary.dark
+    }
+    
+  }
 }));
 
 export default function ProminentAppBar() {
@@ -71,22 +81,47 @@ export default function ProminentAppBar() {
       onClick={toggleDrawer(side, false)}
       onKeyDown={toggleDrawer(side, false)}
     >
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
+      <h2 className={classes.drawerHeader}>CodeSnow</h2>
       <Divider />
       <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
+        {/* {['About', 'Contact Me', 'Portfolio', 'Blog'].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
-        ))}
+        ))} */}
+        <ListItem
+          button
+          className={classes.item}
+          onClick={() => window.location = '/about'}
+        >
+          <ListItemIcon> <PermIdentityOutlinedIcon /> </ListItemIcon>
+          <ListItemText>About</ListItemText>
+        </ListItem>
+        <ListItem
+          button
+          className={classes.item}
+          onClick={() => window.location = '/contact'}
+        >
+          <ListItemIcon> <DraftsOutlinedIcon /> </ListItemIcon>
+          <ListItemText>Contact Me</ListItemText>
+        </ListItem>
+        <ListItem
+          button
+          className={classes.item}
+          onClick={() => window.location = '/portfolio'}
+        >
+          <ListItemIcon> <RecentActorsOutlinedIcon /> </ListItemIcon>
+          <ListItemText>Portfolio</ListItemText>
+        </ListItem>
+        <ListItem
+          button
+          className={classes.item}
+          onClick={() => window.location = '/blog'}
+        >
+          <ListItemIcon> <ViewDayOutlinedIcon /> </ListItemIcon>
+          <ListItemText>Blog</ListItemText>
+        </ListItem>
       </List>
     </div>
   );

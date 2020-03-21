@@ -22,7 +22,7 @@ A personal portfolio project created by and for Jordan Snow! Created using Next.
 
 #### About Page
 
-- [ ] Make the side bar hover keys highlight the secondary color
+- [x] Make the side bar hover keys highlight the secondary color
 - [ ] Write some content
 
 ## Stretch Goals
