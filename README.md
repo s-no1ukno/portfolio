@@ -22,7 +22,8 @@ A personal portfolio project created by and for Jordan Snow! Created using Next.
 - [ ] Find asset pics
 - [x] Get menu buttons working on AppBar
 - [x] Make the side bar hover keys highlight the secondary color
-- [ ] Write some content
+- [x] Write some content
+  - [ ] Content Finished
 ---
 - [ ] Finish layout of site - style later
   - [ ] About page

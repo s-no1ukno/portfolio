@@ -108,6 +108,7 @@ export default function ProminentAppBar() {
         </ListItem>
         <ListItem
           button
+          disabled
           className={classes.item}
           onClick={() => window.location = '/portfolio'}
         >
@@ -116,6 +117,7 @@ export default function ProminentAppBar() {
         </ListItem>
         <ListItem
           button
+          disabled
           className={classes.item}
           onClick={() => window.location = '/blog'}
         >

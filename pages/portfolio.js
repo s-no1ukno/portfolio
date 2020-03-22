@@ -18,7 +18,7 @@ export default function portfolio() {
   return (
     <BaseLayout>
       <Typography variant='h2' className={classes.title}>
-        Hello from Portfolio Page
+        This Area is Under Construction!
       </Typography>
     </BaseLayout>
   )
