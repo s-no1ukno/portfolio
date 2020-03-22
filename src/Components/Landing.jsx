@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Paper } from '@material-ui/core'
-import { BusSolParagraphs } from '../textAssets/BusSolParagraphs'
+import { BusSolPara1 } from '../textAssets/BusSolParagraphs'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -33,10 +33,9 @@ export default function Landing() {
       </Typography>
       <Typography
         className={classes.body}
-        color='textPrimary'
-        component='p'  
+        component='p'
       >
-        <BusSolParagraphs />
+        <BusSolPara1 />
       </Typography>
     </Paper>
   )

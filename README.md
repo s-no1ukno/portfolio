@@ -1,5 +1,9 @@
 # CodeSnow
 
+<!-- DOMAIN OPTIONS -->
+<!-- snowdev.codes -->
+<!-- snowdev.tech -->
+
 A personal portfolio project created by and for Jordan Snow! Created using Next.js and Material UI!
 
 ## Todo List
