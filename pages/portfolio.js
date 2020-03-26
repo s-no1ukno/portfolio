@@ -43,7 +43,7 @@ export default function portfolio() {
             <Card id='mpa' />
           </Grid>
           <Grid item>
-            {/* Placeholder */}
+            <Card id='isp' />
           </Grid>
         </Grid>
       </Container>

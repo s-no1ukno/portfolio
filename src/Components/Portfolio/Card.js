@@ -25,7 +25,8 @@ const MediaCard = (props) => {
   const classes = useStyles();
 
   const { projects } = json
-  console.log(projects);
+  const { id } = props
+  console.log(projects[id].name);
   
   
     
@@ -34,16 +35,15 @@ const MediaCard = (props) => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={gif}
-          title="Contemplative Reptile"
+          image={projects[id].media}
+          title={projects[id].name}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {props.id}
+            {projects[id].name}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            {projects[id].description}
           </Typography>
         </CardContent>
       </CardActionArea>
