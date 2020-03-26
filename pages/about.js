@@ -19,14 +19,15 @@ export default function about() {
     <div>
       <BaseLayout>
         <Container className={classes.root}>
-          <Grid container spacing={3}> 
+          <Landing />
+          {/* <Grid container spacing={3}> 
             <Grid item xs={12} sm={6}>
               <Landing />
             </Grid>
             <Grid item xs={12} sm={6}>
-              {/* Placeholder */}
+              Placeholder
             </Grid>
-          </Grid>
+          </Grid> */}
           <Services />
         </Container>
       </BaseLayout>

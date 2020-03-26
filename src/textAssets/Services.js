@@ -39,7 +39,7 @@ export default function Services() {
         component='p'
         variant='body1'
       >
-        I offer many services, tailored to growing the digital footprint of small businesses. My approach is very modern, and there's not a business model to big or small. I don't charge per hour rates, as I have found that every service deserves a different approach - therefore, after discussing what your business needs are, we can decide on a service plan that will be the most beneficial.
+        I offer many services, tailored to growing the digital footprint of small businesses. My approach is very modern, and there's not a business model too big or small. I don't charge per hour rates, as I have found that every service deserves a different approach - therefore, after discussing what your business needs are, we can decide on a service plan that will be the most beneficial.
       </Typography>
       <Grid container spacing={3}> 
         <Grid item xs={12} sm={6}>
@@ -64,7 +64,7 @@ export default function Services() {
         component='p'
         variant='body1'
       >
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repudiandae quae vitae aperiam illum in quidem soluta itaque, voluptatum nesciunt. Explicabo, ipsam veritatis autem est officiis nesciunt facilis, ullam ea a quia voluptatum iure ipsa in? Alias voluptate, eius autem eum quod numquam nam fugiat, doloremque, ratione facere praesentium ipsum.
+        If you don't see a service on this list that you are interested in, give me a call anyway!  Chances are that I will be able to help out!  
       </Typography>
       
     </Paper>

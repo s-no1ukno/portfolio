@@ -36,7 +36,6 @@ A personal portfolio project created by and for Jordan Snow! Created using Next.
       - [ ] /portfolio/:id
         - [ ] dynamic routing for individual id cards
     - [ ] /portfolio/owner - siteowner UI PROTECTED
-    - [ ] 
 ---
 ## Stretch Goals
 

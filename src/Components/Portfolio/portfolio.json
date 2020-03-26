@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "mpa": {
+      "name": "Meal Planner App",
+      "media": "MealPlanner.gif",
+      "description": "A quick project I did with vanilla HTML/CSS/JavaScript, based on a project by Brad Traversy (Traversy Media).  The point of this was just to get used to making API calls and then mass styling the results without the use of a library."
+    },
+    "isp": {
+      "name": "InspireME",
+      "media": "",
+      "description": "This project took longer to complete, as it was my first full-fledge full stack application.  It uses the full MERN stack, with an Atlas database and an Express server"
+    }
+  }
+}

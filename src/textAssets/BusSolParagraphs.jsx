@@ -17,12 +17,20 @@ const useStyles = makeStyles(theme => ({
   popout: {
     background: theme.palette.secondary.dark,
     padding: theme.spacing(2),
-    margin: theme.spacing(2)
+    margin: theme.spacing(2),
+
+    [theme.breakpoints.up('md')]: {
+      width: '60%',
+      margin: '0 auto',
+      marginTop: theme.spacing(4),
+      marginBottom: theme.spacing(4)
+    }
   },
 
   popoutBody: {
     color: '#fff',
-    paddingTop: theme.spacing(2)
+    paddingTop: theme.spacing(2),
+
   }
 }))
 
