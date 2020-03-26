@@ -10,7 +10,7 @@ A personal portfolio project created by and for Jordan Snow! Created using Next.
 
 ### FrontEnd
 
-- [ ] Outline a site layout
+- [x] Outline a site layout
   - [x] Landing Page Layout
   - [x] About Page Layout
   - [ ] Sitemap
@@ -26,9 +26,10 @@ A personal portfolio project created by and for Jordan Snow! Created using Next.
   - [ ] Content Finished
 ---
 - [ ] Finish layout of site - style later
-  - [ ] About page
-    - [ ] needs to be completed
+  - [x] About page
+    - [x] needs to be completed
   - [ ] Contact me page
+    - [ ] Figure out why copyright is refusing styling in `/src/Components/BaseLayout.js`
     - [ ] decide if keeping this a contact me page...maybe a services page?
   - [ ] Portfolio
     - [ ] main page will have all portfolio items listed in cards

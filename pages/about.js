@@ -5,10 +5,18 @@ import Grid from '@material-ui/core/Grid'
 import Landing from '../src/Components/Landing'
 import BaseLayout from '../src/Components/BaseLayout'
 import Services from '../src/textAssets/Services'
+import CreateIcon from '@material-ui/icons/Create'
+import Fab from '@material-ui/core/Fab'
 
 const useStyles = makeStyles(theme => ({
   root: {
     paddingTop: theme.spacing(2)
+  },
+
+  fab: {
+    position: 'fixed',
+    bottom: '5%',
+    right: '5%'
   }
 }))
 
@@ -30,6 +38,13 @@ export default function about() {
           </Grid> */}
           <Services />
         </Container>
+        <Fab
+          color='primary'
+          className={classes.fab}
+          href='/contact'
+        >
+          <CreateIcon />
+        </Fab>
       </BaseLayout>
     </div>
   );

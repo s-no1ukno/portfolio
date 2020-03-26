@@ -150,7 +150,6 @@ export default function ProminentAppBar() {
             CodeSnow!
           </Typography>
           <IconButton aria-label="display more actions" edge="end" color="inherit">
-            <MoreIcon />
           </IconButton>
         </Toolbar>
       </AppBar>
