@@ -7,19 +7,35 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import gif from '../../../public/MealPlanner.gif'
 
-const json = require('./portfolio.json')
+import json from './portfolio.json'
 
 
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    height: '75vh'
   },
   media: {
     height: 240,
   },
 });
+
+const displayLink = (url) => {
+  return (
+    <Button href={url} size="small" color="primary">
+      See it in action!
+    </Button>
+  )
+}
+
+function NoURL() {
+  return (
+    <>
+      Sorry, this project is not deployed!
+    </>
+  )
+}
 
 const MediaCard = (props) => {
   const classes = useStyles();
@@ -28,11 +44,9 @@ const MediaCard = (props) => {
   const { id } = props
   console.log(projects[id].name);
   
-  
-    
   return (
     <Card className={classes.root} elevation={15}>
-      <CardActionArea>
+      <CardActionArea href={projects[id].url}>
         <CardMedia
           className={classes.media}
           image={projects[id].media}
@@ -45,16 +59,11 @@ const MediaCard = (props) => {
           <Typography variant="body2" color="textSecondary" component="p">
             {projects[id].description}
           </Typography>
+          <Typography variant="body2" color="secondary" component="p">
+            {projects[id].url ? '' : <NoURL />}
+          </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
     </Card>
   );
 }

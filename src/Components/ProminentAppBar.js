@@ -81,7 +81,7 @@ export default function ProminentAppBar() {
       onClick={toggleDrawer(side, false)}
       onKeyDown={toggleDrawer(side, false)}
     >
-      <h2 className={classes.drawerHeader}>CodeSnow</h2>
+      <h2 className={classes.drawerHeader}>Snow Development</h2>
       <Divider />
       <List>
         {/* {['About', 'Contact Me', 'Portfolio', 'Blog'].map((text, index) => (
@@ -108,7 +108,6 @@ export default function ProminentAppBar() {
         </ListItem>
         <ListItem
           button
-          disabled
           className={classes.item}
           onClick={() => window.location = '/portfolio'}
         >
@@ -147,7 +146,7 @@ export default function ProminentAppBar() {
           noWrap
           onClick={handleClick}
           >
-            CodeSnow!
+            Snow Development
           </Typography>
           <IconButton aria-label="display more actions" edge="end" color="inherit">
           </IconButton>

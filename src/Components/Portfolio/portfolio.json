@@ -7,8 +7,15 @@
     },
     "isp": {
       "name": "InspireME",
-      "media": "",
+      "media": "InspireMe.gif",
+      "url": "https://inspire-me.now.sh/",
       "description": "This project took longer to complete, as it was my first full-fledge full stack application.  It uses the full MERN stack, with an Atlas database and an Express server"
+    },
+    "qr": {
+      "name": "QuickRecipes",
+      "media": "QuickRecipe.gif",
+      "url": "https://quick-recipes.now.sh/",
+      "description": "This project was a simple little app that I created for my wife to be able to quickly add recipe URLs, such as what you'd find on Facebook, to an index. I wanted to see if I could implement a fullstack app in one day, and this was the result of that. Express backend, vanilla HTML/CSS/JS frontend."
     }
   }
 }

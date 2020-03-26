@@ -7,6 +7,7 @@ import BaseLayout from '../src/Components/BaseLayout'
 import Services from '../src/textAssets/Services'
 import CreateIcon from '@material-ui/icons/Create'
 import Fab from '@material-ui/core/Fab'
+import TechStack from '../src/Components/TechStack';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -17,7 +18,16 @@ const useStyles = makeStyles(theme => ({
     position: 'fixed',
     bottom: '5%',
     right: '5%'
-  }
+  },
+
+  stack: {
+    marginTop: theme.spacing(0)
+  },
+
+  solutions: {
+    marginBottom: 0
+  },
+
 }))
 
 export default function about() {
@@ -27,15 +37,16 @@ export default function about() {
     <div>
       <BaseLayout>
         <Container className={classes.root}>
-          <Landing />
-          {/* <Grid container spacing={3}> 
+          <Grid container spacing={3}> 
             <Grid item xs={12} sm={6}>
-              <Landing />
+              <Landing className={classes.solutions} />
             </Grid>
             <Grid item xs={12} sm={6}>
-              Placeholder
+              <TechStack className={classes.stack} />
+
+              
             </Grid>
-          </Grid> */}
+          </Grid>
           <Services />
         </Container>
         <Fab
