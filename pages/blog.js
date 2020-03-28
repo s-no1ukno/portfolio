@@ -57,6 +57,7 @@ const blog = props => {
   
   return (
     <BaseLayout className={classes.root}>
+      <h1>This area is in development...</h1>
       <Typography
         component='h1'
         variant='h4'
