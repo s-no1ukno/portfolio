@@ -1,0 +1,56 @@
+* {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin: 3rem 0 5rem
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  width: 100%;
+  background: #003d33;
+  margin: 0 auto;
+  display: block;
+  padding: 2rem;
+}
+
+figure div div {
+  color: white;
+}
+
+div span {
+  text-align: right;
+}
+
+pre code {
+  width: 100%;
+  overflow: hidden;
+}
+
+a {
+  color: #ffb300;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: .3em;
+}
+
+a:hover {
+  font-size: 1.1rem;
+  transition: ease;
+}
