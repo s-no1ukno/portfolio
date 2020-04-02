@@ -2,8 +2,8 @@ import GhostContentAPI from '@tryghost/content-api'
 
 // Create API instance with site creds
 const api = new GhostContentAPI({
-  url: 'http://localhost:2368',
-  key: '30e80d1a99c1feb4ac27beb168',
+  url: 'https://snowdev.info',
+  key: '8b80d5b47a46278ce1f01ebc81',
   version: 'v3'
 })
 
